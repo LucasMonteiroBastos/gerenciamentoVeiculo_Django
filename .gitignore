@@ -1,0 +1,16 @@
+
+*.pyc
+*~
+_pycache_
+.DS_Store
+.env
+/venv/
+~/*.pyc
+
+.idea/
+settings.py
+__pycache__/
+*.py[cod]
+access.log
+error.log
+

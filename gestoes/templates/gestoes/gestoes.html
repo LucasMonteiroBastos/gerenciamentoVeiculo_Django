@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Gerenciamento de Veiculos.</h1>
+    <h2>Modelos</h2>
+    <ul>
+        {% for veiculo in veiculos %}
+            <div>Veículo: {{ veiculo.marca }} {{ veiculo.modelo }}</div>
+            <div>Proprietário: {{ veiculo.proprietario }}</div>
+            <hr>
+        {% endfor %}
+    </ul>
+
+    <h2>Marca.</h2>
+    <ul>
+        {% for veiculo in veiculos %}
+            <li>{{ veiculo.marca }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Proprietário.</h2>
+    <ul>
+        {% for veiculo in veiculos %}
+            <li>{{ veiculo.proprietario }}</li>
+        {% endfor %}
+    </ul>
+    <br>
+
+
+
+</body>
+</html>
